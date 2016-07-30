@@ -1,0 +1,15 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^/?$ "http\:\/\/www\.mobilpymes\.com\/main\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobilpymes.com$
+RewriteRule ^/?$ "http\:\/\/www\.mobilpymes\.com\/main\.html" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mobilpymes\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mobilpymes\.com$
+RewriteRule ^Desktop\/?(.*)$ "http\:\/\/www\.mobilpymes\.com\/main\.html$1" [R=301,L]
+

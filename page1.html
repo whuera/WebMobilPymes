@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+   <div class="header-inner clearfix">
+					<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
+						<?php echo $logo; ?>
+						<?php if ($this->params->get('sitedescription')) : ?>
+							<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
+						<?php endif; ?>
+					</a>
+					<div class="header-search pull-right">
+						<jdoc:include type="modules" name="position-0" style="none" />
+					</div>
+				</div>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Some of my Work</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      
+			<div class="row-fluid">
+				<?php if ($this->countModules('position-8')) : ?>
+					<!-- Begin Sidebar -->
+					<div id="sidebar" class="span3">
+						<div class="sidebar-nav">
+							<jdoc:include type="modules" name="position-8" style="xhtml" />
+						</div>
+					</div>
+					<!-- End Sidebar -->
+				<?php endif; ?>
+				<main id="content" role="main" class="<?php echo $span; ?>">
+					<!-- Begin Content -->
+					<jdoc:include type="modules" name="position-3" style="xhtml" />
+					<jdoc:include type="message" />
+					<jdoc:include type="component" />
+					<jdoc:include type="modules" name="position-2" style="none" />
+					<!-- End Content -->
+				</main>
+				<?php if ($this->countModules('position-7')) : ?>
+					<div id="aside" class="span3">
+						<!-- Begin Right Sidebar -->
+						<jdoc:include type="modules" name="position-7" style="well" />
+						<!-- End Right Sidebar -->
+					</div>
+				<?php endif; ?>
+			</div>
+		
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <footer class="footer" role="contentinfo">
+		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
+			<hr />
+			<jdoc:include type="modules" name="footer" style="none" />
+			<p class="pull-right">
+				<a href="#top" id="back-top">
+					<?php echo JText::_('TPL_PROTOSTAR_BACKTOTOP'); ?>
+				</a>
+			</p>
+			<p>
+				&copy; <?php echo date('Y'); ?> <?php echo $sitename; ?>
+			</p>
+		</div>
+	</footer>
+</footer>
+
+</body>
+</html>
