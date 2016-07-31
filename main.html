@@ -70,6 +70,11 @@ bottom: auto;
 .lineaborde{
     border: 1px solid #e3e3e3;
 }
+.nuevocolornavbar{
+    background-color: #205081;
+border-color: #205081;
+color:#FFFFFF;
+}
   </style>
   <script>
 function cargarPagina(pagina)
@@ -101,7 +106,7 @@ $(document).ready(function(){
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse nuevocolornavbar" style="color:#ffffff">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -109,24 +114,24 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="http://www.mobilpymes.com" target="_parent"><span class="glyphicon glyphicon-knight"> MobilPymes</a>
+        <a class="navbar-brand nuevocolornavbar" href="http://www.mobilpymes.com" target="_parent" style="color:#ffffff"><span class="glyphicon glyphicon-knight"> MobilPymes</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav nuevocolornavbar" style="color:#ffffff">
         <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Inicio</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-check"> Acerca de</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-check" style="color:#ffffff"> Acerca de</a></li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th"></span> Proyectos <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff"><span class="glyphicon glyphicon-th"></span> Proyectos <span class="caret"></span></a>
           <ul class="dropdown-menu">
-        <li><a href="javascript:cargarPagina('listadovisitantes.php');">App Visitantes</a></li>
-      <li><a href="javascript:cargarPagina('proyectosgit.php');">Proyectos desplegados</a></li>
-       <li><a href="javascript:cargarPagina('proyectosgit.html');">Proyectos en GitHub</a></li>
+        <li><a href="javascript:cargarPagina('listadovisitantes.php');" >App Visitantes</a></li>
+      <li><a href="javascript:cargarPagina('proyectosgit.php');" >Proyectos desplegados</a></li>
+       <li><a href="javascript:cargarPagina('proyectosgit.html');" >Proyectos en GitHub</a></li>
           </ul>
           </li>
-        <li><a href="javascript:cargarPagina('contactenos.php');"><span class="glyphicon glyphicon-envelope"></span> Cont&aacute;ctenos</a></li>
+        <li><a href="javascript:cargarPagina('contactenos.php');" style="color:#ffffff"><span class="glyphicon glyphicon-envelope"></span> Cont&aacute;ctenos</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login Clientes</a></li>
+        <li><a href="#" style="color:#ffffff"><span class="glyphicon glyphicon-log-in"></span> Login Clientes</a></li>
       </ul>
     </div>
   </div>
