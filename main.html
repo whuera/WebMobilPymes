@@ -71,10 +71,134 @@ bottom: auto;
     border: 1px solid #e3e3e3;
 }
 .nuevocolornavbar{
-    background-color: #205081;
-border-color: #205081;
+    background-color: #337ab7;
+border-color: #337ab7;
 color:#FFFFFF;
 }
+/*mejoras css*/
+
+.nuevohover:hover {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.nuevomenu{
+    background-color: #e7e7e7;
+    color:#555;
+}
+
+/* make sidebar nav vertical */ 
+@media (min-width: 768px){
+  .affix-content .container {
+    width: 700px;
+  }   
+
+  html,body{
+    background-color: #f8f8f8;
+    height: 100%;
+    overflow: hidden;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .sidebar-nav{
+        position:fixed; 
+        width:100%;
+  }
+  .affix-sidebar{
+    padding-right:0; 
+    font-size:small;
+    padding-left: 0;
+  }  
+  .affix-row, .affix-container, .affix-content{
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;    
+  } 
+  .affix-content{
+    background-color:white; 
+  } 
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar{
+    border-radius:0; 
+    margin-bottom:0; 
+    border:0;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }  
+}
+
+@media (min-width: 769px){
+  .affix-content .container {
+    width: 600px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }  
+}
+
+@media (min-width: 992px){
+  .affix-content .container {
+  width: 900px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1220px){
+  .affix-row{
+    overflow: hidden;
+  }
+
+  .affix-content{
+    overflow: auto;
+  }
+
+  .affix-content .container {
+    width: 1000px;
+  }
+
+  .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .affix-content{
+    padding-right: 30px;
+    padding-left: 30px;
+  }  
+  .affix-title{
+    border-bottom: 1px solid #ecf0f1; 
+    padding-bottom:10px;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse{
+    padding: 0;
+  }
+  .sidebar-nav .navbar li a:hover {
+    background-color: #428bca;
+    color: white;
+  }
+  .sidebar-nav .navbar li a > .caret {
+    margin-top: 8px;
+  }  
+}
+
+
   </style>
   <script>
 function cargarPagina(pagina)
@@ -114,11 +238,13 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand nuevocolornavbar" href="http://www.mobilpymes.com" target="_parent" style="color:#ffffff"><span class="glyphicon glyphicon-knight"> MobilPymes</a>
+        <a class="navbar-brand nuevocolornavbar" href="http://www.mobilpymes.com" target="_parent" style="color:#ffffff"><span class="glyphicon glyphicon-th-list"> MobilPymes</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav nuevocolornavbar" style="color:#ffffff">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Inicio</a></li>
+          <!--
+        <li><a href="#"><span class="glyphicon glyphicon-home" style="color:#ffffff"> Inicio</a></li>
+          -->
         <li><a href="#"><span class="glyphicon glyphicon-check" style="color:#ffffff"> Acerca de</a></li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff"><span class="glyphicon glyphicon-th"></span> Proyectos <span class="caret"></span></a>
@@ -141,34 +267,132 @@ $(document).ready(function(){
   <div class="row content">
     <div class="col-sm-2 sidenav lineaborde">
     <div align="left">
-    <div class="well divtransparent fcolor">
-      <p><a href="javascript:cargarPagina('consultoria.html');">Consultorias</a></p>
-      <p><a href="javascript:cargarPagina('desarrollos.php');">Software a Medida</a></p>
-      
-      <p><a href="javascript:cargarPagina('gestionproyectos.php');">Gesti&oacute;n de Proyectos</a></p>
-      
-        <p><a href="javascript:cargarPagina('contactenos.php');">Cont&aacute;ctenos</a></p>
+        <!--
+    <div class="well">
+        <ul class="">
+            <li class="active">
+                <p><a href="javascript:cargarPagina('consultoria.html');">Consultorias</a></p>
+            </li>
+            <li class="active">
+                <p><a href="javascript:cargarPagina('desarrollos.php');">Software a Medida</a></p>
+            </li>
+            <li class="active">
+                <p><a href="javascript:cargarPagina('gestionproyectos.php');">Gesti&oacute;n de Proyectos</a></p>
+            </li>
+            <li class="active">
+                <p><a href="javascript:cargarPagina('contactenos.php');">Cont&aacute;ctenos</a></p>
+            </li>     
+        </ul>
         </div>
+        -->
+        
+        <div id="MainMenu">
+            <div class="">
+                <a href="#demo3" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading">Aplicaciones M&oacute;viles</h4>
+                    <p class="list-group-item-text">Desarrollos Android / IOS</p>
+
+                </a>
+                <div class="collapse" id="demo3">
+                    <a href="" class="list-group-item">Aplicaciones Android</a>
+                    <!--
+                    <a href="" class="list-group-item">Subitem 2</a>
+                    <a href="" class="list-group-item">Subitem 3</a>
+                    -->
+                </div>
+                <!--
+                <div class="collapse" id="demo3">
+                  <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+                  <div class="collapse list-group-submenu" id="SubMenu1">
+                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                    <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                    <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                      <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                      <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                    </div>
+                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+                  </div>
+                  <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                  <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                </div>
+                -->
+                <a href="#demo4" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading">Ingenieria de Software</h4>
+                    <p class="list-group-item-text">Consultoria y Arquitectura de Software</p>
+
+                </a>
+                <div class="collapse" id="demo4">
+                    <a href="javascript:cargarPagina('desarrollos.php');" class="list-group-item">Software a Medida</a>
+                    <a href="javascript:cargarPagina('gestionproyectos.php');" class="list-group-item">Gesti&oacute;n de Proyectos</a>
+                    <a href="javascript:cargarPagina('contactenos.php');" class="list-group-item">Cont&aacute;ctenos</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
         <div class="well divtransparent fcolor">
-        <img src="images/qrcodemobilpymes.png"/>
+            <img src="images/qrcodemobilpymes.png" style="width: 75%; height:75%"/>
         </div>
-      </div>
+      </div>                        
     </div>
+      <!--contenedor principal -->
     <div class="col-sm-8 text-left" id="contenedor"> 
    <img src="images/mobilpymes.jpg"/>
       <h1>Desarrollo de Software</h1>
       <p>Desarrollo de aplicaciones móviles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.</p>
       <hr>
      
-    </div>
+    </div>      
+     <!-- menu derecho -->     
     <div class="col-sm-2 sidenav lineaborde">
+        <!--
       <div class="well" >
         <p>Configuracion de Servidores de Aplicaciones</p>
       </div>
       <div class="well">
         <p>Software Testing and QA</p>
       </div>
+        -->        
+    <div id="MainMenu2" style="background-color: rgba(51,122,183, 0.5);">
+            <div class="">
+                <a href="#demo41" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading">Configuraci&oacute;n de Servidores</h4>
+                    <p class="list-group-item-text">Servidores de Aplicaciones / Web</p>
+
+                </a>
+                <div class="collapse" id="demo41">
+                    <a href="" class="list-group-item">Servidores de Aplicaci&oacute;n</a>
+                    
+                </div>
+               
+                <a href="#demo5" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading">Software Testing</h4>
+                    <p class="list-group-item-text">Control de calidad en c&oacute;digo fuente con certicaci&oacute;n ISTQB</p>
+
+                </a>
+                <div class="collapse" id="demo5">
+                    <a href="javascript:cargarPagina('desarrollos.php');" class="list-group-item">Calidad en c&oacute;digo fuente</a>
+                   
+                </div>
+                
+                <a href="#demo6" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading">Cursos y Capacitaciones</h4>
+                    <p class="list-group-item-text">Cursos de programaci&oacute;n y administraci&oacute;n Linux</p>
+
+                </a>
+                <div class="collapse" id="demo6">
+                    <a href="javascript:cargarPagina('cursos.php');" class="list-group-item">Cursos y Capacitaci&oacute;n</a>                    
+                    <a href="javascript:cargarPagina('cursoslinux.php');" class="list-group-item">Cursos Linux</a>
+                    
+                </div>
+            </div>
+        </div>
+    
     </div>
+    
+          
   </div>
 </div>
 
