@@ -10,6 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
+  <link rel="stylesheet" href="resources/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  
+  
+  
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -198,6 +204,16 @@ color:#FFFFFF;
   }  
 }
 
+div.second {
+    /*
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+    background-image: url('images/efecto-vidrio.jpg');*/
+     opacity: 0.8;
+     background-image: url('images/Flow.png');
+   /* background-color: #fff;*/
+   
+}
 
   </style>
   <script>
@@ -227,6 +243,13 @@ $(document).ready(function(){
 });
 </script>
 
+<style>
+    input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:1 !important;
+    }
+</style>
+
 </head>
 <body>
 
@@ -238,7 +261,7 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand nuevocolornavbar" href="http://www.mobilpymes.com" target="_parent" style="color:#ffffff"><span class="glyphicon glyphicon-th-list"> MobilPymes</a>
+        <a class="navbar-brand nuevocolornavbar" href="http://www.mobilpymes.com" target="_parent" style="color:#ffffff"><span class="glyphicon glyphicon-th-list"></span> MobilPymes</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav nuevocolornavbar" style="color:#ffffff">
@@ -291,10 +314,12 @@ $(document).ready(function(){
                 <a href="#demo3" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
                     <h4 class="list-group-item-heading">Aplicaciones M&oacute;viles</h4>
                     <p class="list-group-item-text">Desarrollos Android / IOS</p>
+                    
 
                 </a>
                 <div class="collapse" id="demo3">
-                    <a href="" class="list-group-item">Aplicaciones Android</a>
+                    <a href="javascript:cargarPagina('registroempleados.php');" class="list-group-item">Registro empleados G4S</a>
+                    <a href="javascript:cargarPagina('listaremp.php');" class="list-group-item">Reporte de registros</a>
                     <!--
                     <a href="" class="list-group-item">Subitem 2</a>
                     <a href="" class="list-group-item">Subitem 3</a>
@@ -333,15 +358,18 @@ $(document).ready(function(){
         
         
         <div class="well divtransparent fcolor">
-            <img src="images/qrcodemobilpymes.png" style="width: 75%; height:75%"/>
+           <!-- <img src="images/qrcodemobilpymes.png" style="width: 75%; height:75%"/> -->
         </div>
       </div>                        
     </div>
       <!--contenedor principal -->
     <div class="col-sm-8 text-left" id="contenedor"> 
-   <img src="images/mobilpymes.jpg"/>
+   <img src="images/mobilpymes2.jpg"/>
       <h1>Desarrollo de Software</h1>
-      <p>Desarrollo de aplicaciones móviles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.</p>
+      <p>Desarrollo de aplicaciones m&oacute;viles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.
+          somos implementadores de software empresarial, a mediana y gran escala nuestra experiencia en desarrollo e implementaci&oacute;n de proyectos nos da la pauta para tomar
+          cualquier proyecto y ejecutarlo.
+      </p>
       <hr>
      
     </div>      
