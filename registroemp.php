@@ -30,8 +30,6 @@ if (!$retry_value) {
     echo '<div id="msgalert" class="alert alert-warning" role="alert">Error al intentar grabar el registro intente de nuevo o verifique los datos.</div>';
 }
 else{	
-//exit(header("Location: /Success.html"));
-//movePage(301,"http://www.mobilpymes.com/Success.html");
     echo '<div id="msgalert" class="alert alert-success" role="alert">Estimad@ '.$subs_nombres.' '.$subs_apellidos.' se ha registrado correctamente, pronto nos pondremos en contacto con usted.</div>';
 
 }
