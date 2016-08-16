@@ -3,10 +3,11 @@
   <div class="panel-heading">
     <h3 class="panel-title">Cursos</h3>
   </div>
-    <div class="panel-body" style="overflow-y: scroll">
+    <div class="panel-body" style="height: 500px; overflow-y: scroll">
          <div class="container">
   <h2>Capacitaciones para equipos de desarrollo de software</h2>
   <p>cursos focalizados en los requerimientos y problematica puntual de cada proyecto.</p>
+  <a href="javascript:cargarPagina('temariocursos.html');" target="_parent">m&aacute;s informaci&oacute;n y temario</a>
   <table class="table table-hover" style="height: 75%; width: 75%;">
     <thead>
       <tr>
