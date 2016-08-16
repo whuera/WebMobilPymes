@@ -260,7 +260,20 @@ $(document).ready(function(){
     position: relative;
 
     }
+    
+
+    .mySlides {display:none;}
+    .imgdiv{
+        background-image: url("images/mobilpymesfondo.jpg");
+    }
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
 </style>
+
+
 
 </head>
 <body>
@@ -330,6 +343,7 @@ $(document).ready(function(){
 
                 </a>
                 <div class="collapse" id="demo3">
+                    <a href="javascript:cargarPagina('android.html');" class="list-group-item">Aplicaciones M&oacute;viles</a>
                     <a href="javascript:cargarPagina('registroempleados.php');" class="list-group-item">Registro empleados G4S</a>
                     <a href="javascript:cargarPagina('listaremp.php');" class="list-group-item">Reporte de registros</a>
                     <!--
@@ -361,6 +375,7 @@ $(document).ready(function(){
                 </a>
                 <div class="collapse" id="demo4">
                     <a href="javascript:cargarPagina('desarrollos.php');" class="list-group-item">Software a Medida</a>
+                    <a href="javascript:cargarPagina('bpm.html');" class="list-group-item">Consultor&iacute;as SOA / BPM</a>
                     <a href="javascript:cargarPagina('gestionproyectos.php');" class="list-group-item">Gesti&oacute;n de Proyectos</a>
                     <a href="javascript:cargarPagina('contactenos.php');" class="list-group-item">Cont&aacute;ctenos</a>
                 </div>
@@ -368,21 +383,53 @@ $(document).ready(function(){
         </div>
         
         
-        
+        <!--
         <div class="well divtransparent fcolor">
-           <!-- <img src="images/qrcodemobilpymes.png" style="width: 75%; height:75%"/> -->
+           <!-- <img src="images/qrcodemobilpymes.png" style="width: 75%; height:75%"/> 
         </div>
+        -->
       </div>                        
     </div>
       <!--contenedor principal -->
-    <div class="col-sm-8 text-left" id="contenedor"> 
-   <img src="images/mobilpymes2.jpg"/>
-      <h1>Desarrollo de Software</h1>
+    <div class="col-sm-8 text-left imgdiv" id="contenedor"> 
+  <!-- <img src="images/mobilpymes2.jpg"/>
+   <div class="well" style="text-align: justify; opacity: 0.8;">
+      <h1>Desarrollo y Arquitectura de Software</h1>
       <p>Desarrollo de aplicaciones m&oacute;viles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.
           somos implementadores de software empresarial, a mediana y gran escala nuestra experiencia en desarrollo e implementaci&oacute;n de proyectos nos da la pauta para tomar
           cualquier proyecto y ejecutarlo.
       </p>
+   </div>
       <hr>
+     -->  
+      <br>
+<div class="panel panel-default" style="opacity: 0.8;">
+  <div class="panel-heading">
+      <h1>Arquitectura y Desarrollo de Software</h1>
+  </div>
+      <div class="panel-body">
+          <div class="panel-body w3-content w3-section">
+              <img class="img-responsive" src="images/app-moviles.jpg" style="width:50%" alt="Image">
+   
+          </div>
+          
+       
+          
+          
+          <div class="well lineaborde">     
+   
+              <p>Desarrollo de aplicaciones m&oacute;viles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.
+          somos implementadores de software empresarial, a mediana y gran escala nuestra experiencia en desarrollo e implementaci&oacute;n de proyectos nos da la pauta para tomar
+          cualquier proyecto y ejecutarlo.
+      </p>
+              
+          </div>
+  </div>
+
+</div>
+<br>
+
+      
      
     </div>      
      <!-- menu derecho -->     

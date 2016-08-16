@@ -18,7 +18,8 @@
         if ($stmt = $con->prepare($query)) {
             $stmt->execute();
             $stmt->bind_result($field1, $field2, $field3, $field4, $field5, $field6, $field7);
-            echo '<div class="panel panel-default">';
+            echo '<br/>';
+            echo '<div class="panel panel-default"  style="opacity: 0.8;">';
             echo '<div class="panel-heading">Registro de Informaci&oacute;n de Empleados G4S</div>';
             echo '<div class="panel-body">';
             echo '<p>Informacion B&aacute;sica y n&uacute;mero cargas familiares</p>';

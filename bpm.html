@@ -1,0 +1,49 @@
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+</script>
+
+<br>
+<div class="panel panel-default"  style="opacity: 0.8;">
+    <div class="panel-heading">
+        <h1 class="panel-title">Consultorias SOA y manejo de proyectos BPM</h1>
+    </div>
+    <div class="panel-body">
+        <!--
+        <div class="panel-body marca-de-agua"><img src="images/bmp-oracle.png" class="img-responsive" style="width:50%" alt="Image"></div>
+        -->
+        <div class="panel-body w3-content w3-section" style="max-width:500px">
+            <img class="mySlides img-responsive" src="images/bmp-oracle.png" style="width:100%" alt="Image">
+            <img class="mySlides img-responsive" src="images/bpm-oracle2.png" style="width:100%" alt="Image">
+        </div>
+        <br/>  
+
+        <div class="well lineaborde" style="text-align: justify; opacity: 0.8;">     
+            Desarrollamos e integramos software con arquitectura SOA, utilizamos herramientas de la suite Oracle e IBM, para diseñar e implementar
+            soluciones basadas en SOA / BPM.
+            El objetivo de este servicio es llevar a cabo un análisis exhaustivo de los procesos comprendidos en el alcance e identificar posibles puntos de mejora.
+            El modelado de procesos es una de las iniciativas más comunes dentro de una organización que considera la orientación a procesos como un elemento clave 
+            para la optimización de su negocio.
+            La diagramación de los procesos y la documentación de los mismos facilitan la detección de errores en los procesos y su optimización progresiva
+            Las herramientas de soporte al modelado de procesos, permiten una ayuda adicional en el trabajo de modelado, 
+            utilizando nomenclatura, iconos, gráficos adecuados a los estándares y permitiendo la publicación de los procesos a la organización.
+        </div>
+    </div>
+
+</div>
+<br>

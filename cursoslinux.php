@@ -1,7 +1,7 @@
 <br>
-<div class="panel panel-default">
+<div class="panel panel-default"  style="opacity: 0.8;">
   <div class="panel-heading">
-    <h3 class="panel-title">Cursos</h3>
+    <h1 class="panel-title">Cursos de Servidores Linux</h1>
   </div>
     <div class="panel-body" style="overflow-y: scroll">
          <div class="container">

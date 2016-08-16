@@ -36,9 +36,9 @@ return false;
 <br>
 <!--form name="myform" action="registro.php" method="POST"-->
     <form id="myform">
-<div class="panel panel-default">
+<div class="panel panel-default"  style="opacity: 0.8;">
   <div class="panel-heading">
-    <h3 class="panel-title">Formulario de Contacto</h3>
+    <h1 class="panel-title">Formulario de Contacto</h1>
   </div>
   <div class="panel-body">
     <div class="input-group">
@@ -75,9 +75,9 @@ if(isset($_POST['submit'])){
 ?>
 
 <br>
-<div class="panel panel-default">
+<div class="panel panel-default"  style="opacity: 0.8;">
   <div class="panel-heading">
-    <h3 class="panel-title">Ubicaci&oacute;n de nuestras oficinas</h3>
+    <h1 class="panel-title">Ubicaci&oacute;n de nuestras oficinas</h1>
   </div>
   <div class="panel-body">
     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6710.016383879851!2d-78.4941410535372!3d-0.17545680973924666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbussinesflex+quito!5e0!3m2!1sen!2ses!4v1467408070644" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

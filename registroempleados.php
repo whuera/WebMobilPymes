@@ -93,7 +93,7 @@
     });
 </script>
 <div class="row">
-<div class="container" style="width:auto;">
+<div class="container" style="width:auto; opacity: 0.8;">
     <!-- <h2>Dynamic Tabs</h2> -->
     <br>
     <ul class="nav nav-tabs">
@@ -114,7 +114,7 @@
                     <h3 class="panel-title">Registre su Informaci&oacute;n B&aacute;sica</h3>
                     <p id="msg"></p>
                 </div>
-                <div class="panel-body second marca-de-agua" style="height: 500px; overflow-y: scroll">
+                <div class="panel-body second" style="height: 500px; overflow-y: scroll">
                     <form id="myform" role="form" onkeyup="validar();">
                         <div class="form-group">
                             <label>Ingrese sus nombres</label>

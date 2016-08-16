@@ -1,7 +1,7 @@
 <br>
-<div class="panel panel-default">
+<div class="panel panel-default" style="opacity: 0.8;">
   <div class="panel-heading">
-    <h3 class="panel-title">Cursos</h3>
+      <h1 class="panel-title">Cursos de Programaci&oacute;n</h1>
   </div>
     <div class="panel-body" style="height: 500px; overflow-y: scroll">
          <div class="container">
@@ -37,19 +37,19 @@
          <td>*</td>
       </tr>
       <tr>
-        <td>Java / Aplicaciones Web con Boopstrap / Angular / JQuery</td>
+        <td>Java / Aplicaciones Web con Bootstrap / Angular / JQuery</td>
         <td>pre requisito conocimientos y fundamentos java, HTML y javascript</td>
         <td>*</td>
          <td>*</td>
       </tr>
       <tr>
-        <td>PHP / Aplicaciones Web con Boopstrap / Angular / JQuery</td>
+        <td>PHP / Aplicaciones Web con Bootstrap / Angular / JQuery</td>
         <td>pre requisito conocimientos en HTML y javascript</td>
         <td>*</td>
          <td>*</td>
       </tr>
       <tr>
-        <td>C# ASP.Net/ Aplicaciones Web con Boopstrap / Angular / JQuery</td>
+        <td>C# ASP.Net/ Aplicaciones Web con Bootstrap / Angular / JQuery</td>
         <td>*</td>
         <td>*</td>
          <td>*</td>

@@ -1,6 +1,5 @@
 
 
-
         <?php
         include 'conexion.php';
         /*
@@ -18,14 +17,15 @@
         if ($stmt = $con->prepare($query)) {
             $stmt->execute();
             $stmt->bind_result($field1, $field2, $field3);
-            echo '<div class="panel panel-default">';
+           echo '<br/>';
+            echo '<div class="panel panel-default" style="opacity: 0.8;">';
             echo '<div class="panel-heading">Visitantes del sitio</div>';
             echo '<div class="panel-body">';
             echo '<p>Visitantes registrados dentro del App Movil</p>';
             echo '</div>';
-            echo '<div class="table-responsive">';
+            echo '<div class="table-responsive" style="width: 100%; height: 400px; overflow-y: scroll">';
             echo '<table class="table table-bordered">';
-             echo '<caption>An&aacute;lisis de visitantes</caption>';
+             echo '<caption><span class="glyphicon glyphicon-signal"></span> An&aacute;lisis de visitantes</caption>';
             while ($stmt->fetch()) {
                   echo '<tr style="background-color:#f1f1f1">';
                   echo '<td>'.$field1.'</td>';
@@ -37,6 +37,7 @@
              echo '</table>';
              echo '</div>';
              echo '</div>';
+           
             $stmt->close();
            
         }
