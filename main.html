@@ -4,6 +4,7 @@
   <title>MobilPymes Aplicaciones M&oacute;viles para todo tipo de Empresas PYMES</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8sVvF7JVmfcn-YY61ahNyjXghZMf6w7j8dXR8GpF1Ks" />
   <!-- estilos css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="resources/mobilpymes.css">
@@ -16,7 +17,20 @@
   <link rel="stylesheet" href="resources/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-  
+  <!-- google analytics snnipet-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83147911-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- end snnipet-->
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -249,6 +263,28 @@ $(document).ready(function(){
 });
 </script>
 
+
+<script>
+    
+    $(document).ready(function() { 
+    $('#link1').click(function() { 
+        $.blockUI({ css: { 
+            border: 'none', 
+            padding: '15px', 
+            backgroundColor: '#000', 
+            '-webkit-border-radius': '10px', 
+            '-moz-border-radius': '10px', 
+            opacity: .5, 
+            color: '#fff' 
+        } }); 
+ 
+        setTimeout($.unblockUI, 2000); 
+    }); 
+}); 
+   
+    
+</script>
+
 <style>
     input.transparent-input{
        background-color:rgba(0,0,0,0) !important;
@@ -294,13 +330,14 @@ h1 {
           <!--
         <li><a href="#"><span class="glyphicon glyphicon-home" style="color:#ffffff"> Inicio</a></li>
           -->
-          <li><a href="#"><span class="glyphicon glyphicon-check" style="color:#ffffff"></span> Acerca de</a></li>
+          <li><a href="javascript:cargarPagina('acerca.html');"><span class="glyphicon glyphicon-check" style="color:#ffffff"></span> Acerca de</a></li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff"><span class="glyphicon glyphicon-th"></span> Proyectos <span class="caret"></span></a>
           <ul class="dropdown-menu">
-        <li><a href="javascript:cargarPagina('listadovisitantes.php');" >App Visitantes</a></li>
+              <li><a href="javascript:cargarPagina('listadovisitantes.php');">App Visitantes</a></li>
       <li><a href="javascript:cargarPagina('proyectosgit.php');" >Proyectos desplegados</a></li>
        <li><a href="javascript:cargarPagina('proyectosgit.html');" >Proyectos en GitHub</a></li>
+       <li><a href="javascript:cargarPagina('geolocalizacion.html');" >Geolocalizaci&oacute;n</a></li>
           </ul>
           </li>
         <li><a href="javascript:cargarPagina('contactenos.php');" style="color:#ffffff"><span class="glyphicon glyphicon-envelope"></span> Cont&aacute;ctenos</a></li>
@@ -344,7 +381,7 @@ h1 {
 
                 </a>
                 <div class="collapse" id="demo3">
-                    <a href="javascript:cargarPagina('android.html');" class="list-group-item">Aplicaciones M&oacute;viles</a>
+                    <a href="javascript:cargarPagina('android.html');" class="list-group-item" id="link1">Aplicaciones M&oacute;viles</a>
                     <a href="javascript:cargarPagina('registroempleados.php');" class="list-group-item">Registro empleados G4S</a>
                     <a href="javascript:cargarPagina('listaremp.php');" class="list-group-item">Reporte de registros</a>
                     <!--
@@ -378,6 +415,7 @@ h1 {
                     <a href="javascript:cargarPagina('desarrollos.php');" class="list-group-item">Software a Medida</a>
                     <a href="javascript:cargarPagina('bpm.html');" class="list-group-item">Consultor&iacute;as SOA / BPM</a>
                     <a href="javascript:cargarPagina('gestionproyectos.php');" class="list-group-item">Gesti&oacute;n de Proyectos</a>
+                    <a href="javascript:cargarPagina('googleapps.html');" class="list-group-item">Integradores Google Apps</a>
                     <a href="javascript:cargarPagina('contactenos.php');" class="list-group-item">Cont&aacute;ctenos</a>
                 </div>
             </div>
@@ -447,14 +485,14 @@ h1 {
             <div class="">
                 <a href="#demo41" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
                     <div style="text-align: left">
-                    <h4 class="list-group-item-heading"><i class="fa fa-tasks fa-1x"></i> Configuraci&oacute;n de Servidores</h4>
+                    <h4 class="list-group-item-heading"><i class="fa fa-tasks fa-1x"></i> Configuraci&oacute;n de Servidores / CLOUD AWS</h4>
                     
-                    <p class="list-group-item-text">Servidores de Aplicaciones / Web</p>
+                    <p class="list-group-item-text">Servidores de Aplicaciones / Web / Cloud AWS EC2</p>
                     <hr>
                     </div>
                 </a>
                 <div class="collapse" id="demo41">
-                    <a href="" class="list-group-item">Servidores de Aplicaci&oacute;n</a>
+                    <a href="javascript:cargarPagina('aws.html');" class="list-group-item">Servidores de Aplicaci&oacute;n</a>
                     
                 </div>
                
