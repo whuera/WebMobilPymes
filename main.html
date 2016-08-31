@@ -285,6 +285,16 @@ $(document).ready(function(){
     
 </script>
 
+<!-- facebook plugin -->
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7&appId=577886618908395";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <style>
     input.transparent-input{
        background-color:rgba(0,0,0,0) !important;
@@ -416,6 +426,7 @@ h1 {
                     <a href="javascript:cargarPagina('bpm.html');" class="list-group-item">Consultor&iacute;as SOA / BPM</a>
                     <a href="javascript:cargarPagina('gestionproyectos.php');" class="list-group-item">Gesti&oacute;n de Proyectos</a>
                     <a href="javascript:cargarPagina('googleapps.html');" class="list-group-item">Integradores Google Apps</a>
+                    <a href="javascript:cargarPagina('pagosaeroseguro.html');" class="list-group-item">AeroSeguro Switch</a>
                     <a href="javascript:cargarPagina('contactenos.php');" class="list-group-item">Cont&aacute;ctenos</a>
                 </div>
             </div>
@@ -533,6 +544,7 @@ h1 {
 </div>
 
 <footer class="container-fluid text-center">
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
   <p>Para informaci&oacute;n de nuestros servicios puede escribirnos al correo:</p> <a href="mailto:info@mobilpymes.com">info@mobilpymes.com</a>
   <div>Quito - Ecuador</div>
 </footer>

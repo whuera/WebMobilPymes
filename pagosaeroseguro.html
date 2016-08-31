@@ -1,0 +1,57 @@
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '577886618908395',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<br>
+<div class="panel panel-default"  style="opacity: 0.8;">
+  <div class="panel-heading">
+    <h1 class="panel-title">Pagos AeroSeguro</h1>
+  </div>
+      <div class="panel-body">
+      
+          <div class="well" style="text-align: justify;">      
+              Realize los pagos de los servicios de AeroSeguro
+              <hr>
+              
+              <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+              <hr>
+                      <div id="siteloader" style="width: 100%; height: 400px; overflow: scroll">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_parent">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9SG8229NYGTT2">
+<table>
+<tr><td><input type="hidden" name="on0" value="AC4X4">AC4X4</td></tr><tr><td><select name="os0">
+	<option value="1 DIA">1 DIA $120.00 USD</option>
+	<option value="5 DIAS">5 DIAS $600.00 USD</option>
+	<option value="7 DIAS">7 DIAS $840.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+        </div>
+          </div>
+  </div>
+
+</div>
+<br>
