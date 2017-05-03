@@ -314,9 +314,28 @@ $(document).ready(function(){
         background-image: url("images/mobilpymesfondo.jpg");
     }
 
-h1 {
+h1,h2 {
     color: black;
     text-shadow: 2px 2px 4px #000000;
+}
+
+
+.contenedor-tabla{
+
+display: table;
+
+}
+
+.contenedor-fila{
+
+display: table-row;
+
+}
+
+.contenedor-columna{
+
+display: table-cell;
+
 }
 </style>
 
@@ -352,8 +371,9 @@ h1 {
           </li>
         <li><a href="javascript:cargarPagina('contactenos.php');" style="color:#ffffff"><span class="glyphicon glyphicon-envelope"></span> Cont&aacute;ctenos</a></li>
       </ul>
+       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" style="color:#ffffff"><span class="glyphicon glyphicon-log-in"></span> Login Clientes</a></li>
+        <li><a href="javascript:cargarPagina('ingreso.php');" " style="color:#ffffff"><span class="glyphicon glyphicon-log-in"></span> Login Clientes</a></li>
       </ul>
     </div>
   </div>
@@ -417,8 +437,9 @@ h1 {
                 </div>
                 -->
                 <a href="#demo4" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
-                    <h4 class="list-group-item-heading"><i class="fa fa-html5 fa-1x"></i> Ingenieria de Software</h4>
+                    <h4 class="list-group-item-heading"><i class="fa fa-html5 fa-1x"></i> Ingenier&iacute;a de Software</h4>
                     <p class="list-group-item-text">Consultoria y Arquitectura de Software</p>
+                    <hr>
                     
                 </a>
                 <div class="collapse" id="demo4">
@@ -426,9 +447,37 @@ h1 {
                     <a href="javascript:cargarPagina('bpm.html');" class="list-group-item">Consultor&iacute;as SOA / BPM</a>
                     <a href="javascript:cargarPagina('gestionproyectos.php');" class="list-group-item">Gesti&oacute;n de Proyectos</a>
                     <a href="javascript:cargarPagina('googleapps.html');" class="list-group-item">Integradores Google Apps</a>
+                    <a href="javascript:cargarPagina('soportehoras.html');" class="list-group-item">Soporte T&eacute;cnico por Horas</a>
                     <a href="javascript:cargarPagina('pagosaeroseguro.html');" class="list-group-item">AeroSeguro Switch</a>
                     <a href="javascript:cargarPagina('contactenos.php');" class="list-group-item">Cont&aacute;ctenos</a>
                 </div>
+                
+                
+                <a href="#demo8" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading"><i class="glyphicon glyphicon-tower"></i> CyberSeguridad</h4>
+                    <p class="list-group-item-text">Consultoria en Procesos de CyberSeguridad</p>
+                   <hr>
+                    
+                </a>
+                <div class="collapse" id="demo8">
+                    <a href="javascript:cargarPagina('cybersecurity.html');" class="list-group-item">Consultor&iacute;a en Procesos de CyberSeguridad</a>
+                    
+                </div>
+                
+                
+                 <a href="#demo7" class="list-group-item list-group-item active" data-toggle="collapse" data-parent="#MainMenu">
+                    <h4 class="list-group-item-heading"><i class="glyphicon glyphicon-stats"></i> Telecomunicaciones</h4>
+                    <p class="list-group-item-text">Infraestructura y enlaces punto a punto</p>
+                   
+                    
+                </a>
+                <div class="collapse" id="demo7">
+                    <a href="javascript:cargarPagina('telecomunicaciones.html');" class="list-group-item">Infraestructura y Enlaces</a>
+                    
+                </div>
+                
+                
+                
             </div>
         </div>
         
@@ -455,11 +504,11 @@ h1 {
       <br>
 <div class="panel panel-default" style="opacity: 0.8;">
   <div class="panel-heading">
-      <h1>Arquitectura y Desarrollo de Software</h1>
+      <h2>Ciberseguridad, Arquitectura TI y Desarrollo de Software seguro</h2>
   </div>
       <div class="panel-body">
           <div class="panel-body w3-content w3-section">
-              <img class="img-responsive" src="images/app-moviles.jpg" style="width:50%" alt="Image">
+              <img class="img-responsive" src="images/app-moviles.jpg" style="width:75%" alt="Image">
    
           </div>
           
@@ -468,19 +517,33 @@ h1 {
           
           <div class="well lineaborde">     
    
-              <p>Desarrollo de aplicaciones m&oacute;viles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas informaticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.
+              <p>Desarrollo de aplicaciones m&oacute;viles para todo tipo de empresas PYMES, en tecnologias Android / IOS, tenemos mas de 10 años de experiencia en gestión e implementación de sistemas inform&aacute;ticos, tenemos experiencia en desarrollo de aplicaciones Java / C# / PowerBuilder.
           somos implementadores de software empresarial, a mediana y gran escala nuestra experiencia en desarrollo e implementaci&oacute;n de proyectos nos da la pauta para tomar
           cualquier proyecto y ejecutarlo.
+          Tambi&eacute;n contamos con una gran experiencia en Infraestructura tanto de Servidores (Linux / Windows) asi como en telecomunicaciones e implementaci&oacute;n de equipos
+          y Software Fortinet.
       </p>
-              
+ <div class="table-responsive">
+  <table class="table"  style="width:60%">
+    <tr>
+	<td>
+	<a title="Fortinet - FortiClient" href="http://www.forticlient.com" style="background: url(http://www.forticlient.com/images/forticlient_share_button.png) no-repeat center center;height: 42px;width: 172px;display: block"></a>
+	</td>
+	<td>
+	<img class="img-responsive" src="../images/The_Linux_Foundation.png" alt="logo linux foundation" style="width:40%">   
+	</td>
+        
+        <td></td>
+        <td></td>
+        <td></td>
+	</tr>
+  </table>
+</div>
           </div>
   </div>
 
 </div>
-<br>
 
-      
-     
     </div>      
      <!-- menu derecho -->     
     <div class="col-sm-2 sidenav lineaborde">
@@ -498,7 +561,7 @@ h1 {
                     <div style="text-align: left">
                     <h4 class="list-group-item-heading"><i class="fa fa-tasks fa-1x"></i> Configuraci&oacute;n de Servidores / CLOUD AWS</h4>
                     
-                    <p class="list-group-item-text">Servidores de Aplicaciones / Web / Cloud AWS EC2</p>
+                    <p class="list-group-item-text">Servidores de Aplicaciones / Web / Cloud AWS EC2 / Azure Microsoft</p>
                     <hr>
                     </div>
                 </a>
@@ -544,8 +607,9 @@ h1 {
 </div>
 
 <footer class="container-fluid text-center">
-    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-  <p>Para informaci&oacute;n de nuestros servicios puede escribirnos al correo:</p> <a href="mailto:info@mobilpymes.com">info@mobilpymes.com</a>
+    <!--div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div-->
+  <div>Para informaci&oacute;n de nuestros servicios puede escribirnos al correo:</div> 
+  <a href="mailto:info@mobilpymes.com">info@mobilpymes.com</a>
   <div>Quito - Ecuador</div>
 </footer>
 
